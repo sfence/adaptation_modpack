@@ -2,6 +2,7 @@
 for color_key, color_data in pairs(adaptation_lib.basic_colors) do
   adaptation_lib.add_item("wool_"..color_key, {
       name = "wool:"..color_key,
+      tile = "wool_"..color_key..".png",
       lists = {"wool"},
       
       color = color_key,

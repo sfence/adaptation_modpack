@@ -128,7 +128,7 @@ adaptation_lib.add_item("lump_gold", {
     name = "default:gold_lump",
   })
 
-adaptation_lib.add_item("ingot_iron", {
+adaptation_lib.add_item("ingot_steel", {
     name = "default:steel_ingot",
   })
 adaptation_lib.add_item("ingot_copper", {
@@ -144,6 +144,21 @@ adaptation_lib.add_item("ingot_gold", {
     name = "default:gold_ingot",
   })
 
+adaptation_lib.add_item("block_steel", {
+    name = "default:steelblock",
+  })
+adaptation_lib.add_item("block_copper", {
+    name = "default:copperblock",
+  })
+adaptation_lib.add_item("block_tin", {
+    name = "default:tinblock",
+  })
+adaptation_lib.add_item("block_bronze", {
+    name = "default:bronzeblock",
+  })
+adaptation_lib.add_item("block_gold", {
+    name = "default:goldblock",
+  })
 
 adaptation_lib.add_item("chest", {
     name = "default:chest",

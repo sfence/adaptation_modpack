@@ -15,7 +15,7 @@ adaptation_lib.add_item("lump_gold", {
     name = "fl_ores:gold_lump",
   })
 
-adaptation_lib.add_item("ingot_iron", {
+adaptation_lib.add_item("ingot_steel", {
     name = "fl_ores:iron_ingot",
   })
 adaptation_lib.add_item("ingot_copper", {

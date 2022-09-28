@@ -90,7 +90,7 @@ adaptation_lib.add_item("lump_gold", {
     name = "hades_core:gold_lump",
   })
 
-adaptation_lib.add_item("ingot_iron", {
+adaptation_lib.add_item("ingot_steel", {
     name = "hades_core:steel_ingot",
   })
 adaptation_lib.add_item("ingot_copper", {
@@ -106,6 +106,21 @@ adaptation_lib.add_item("ingot_gold", {
     name = "hades_core:gold_ingot",
   })
 
+adaptation_lib.add_item("block_steel", {
+    name = "hades_core:steelblock",
+  })
+adaptation_lib.add_item("block_copper", {
+    name = "hades_core:copperblock",
+  })
+adaptation_lib.add_item("block_tin", {
+    name = "hades_core:tinblock",
+  })
+adaptation_lib.add_item("block_bronze", {
+    name = "hades_core:bronzeblock",
+  })
+adaptation_lib.add_item("block_gold", {
+    name = "hades_core:goldblock",
+  })
 
 adaptation_lib.add_item("chest", {
     name = "hades_core:chest",
@@ -122,5 +137,18 @@ adaptation_lib.add_item("mese_crystal", {
   })
 adaptation_lib.add_item("mese_crystal_fragment", {
     name = "hades_core:mese_crystal_fragment",
+  })
+
+adaptation_lib.add_item("water", {
+    name = "hades_core:water_source",
+    tile = "default_water.png",
+    sounds = hades_sounds.node_sound_water_defaults(),
+    lists = {"water_source"},
+  })
+adaptation_lib.add_item("water_flowing", {
+    name = "hades_core:water_flowing",
+    tile = "default_water.png",
+    sounds = hades_sounds.node_sound_water_defaults(),
+    lists = {"water_flowing"},
   })
 

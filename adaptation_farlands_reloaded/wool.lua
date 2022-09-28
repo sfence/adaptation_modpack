@@ -1,6 +1,7 @@
 
 adaptation_lib.add_item("wool_raw", {
     name = "fl_wool:wool",
+    tile = "farlands_wool.png",
   })
 
 for color_key, color_data in pairs(adaptation_lib.basic_colors) do

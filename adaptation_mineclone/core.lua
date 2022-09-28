@@ -80,7 +80,7 @@ adaptation_lib.add_item("lump_gold", {
     name = "mcl_core:gold_lump",
   })
 
-adaptation_lib.add_item("ingot_iron", {
+adaptation_lib.add_item("ingot_steel", {
     name = "mcl_core:steel_ingot",
   })
 adaptation_lib.add_item("ingot_copper", {
@@ -96,6 +96,21 @@ adaptation_lib.add_item("ingot_gold", {
     name = "mcl_core:gold_ingot",
   })
 
+adaptation_lib.add_item("block_steel", {
+    name = "mcl_core:steel_block",
+  })
+adaptation_lib.add_item("block_copper", {
+    name = "mcl_core:copper_block",
+  })
+adaptation_lib.add_item("block_tin", {
+    name = "mcl_core:tin_block",
+  })
+adaptation_lib.add_item("block_bronze", {
+    name = "mcl_core:bronze_block",
+  })
+adaptation_lib.add_item("block_gold", {
+    name = "mcl_core:gold_block",
+  })
 
 adaptation_lib.add_item("chest", {
     name = "mcl_core:chest",
