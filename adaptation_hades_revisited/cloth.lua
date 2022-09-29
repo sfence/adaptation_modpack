@@ -1,6 +1,7 @@
 
 adaptation_lib.add_item("wool_raw", {
     name = "hades_cloth:white",
+      tile = "wool_white.png",
     lists = {"wool"},
   })
 
