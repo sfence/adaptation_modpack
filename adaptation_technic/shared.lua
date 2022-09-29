@@ -6,35 +6,35 @@ if minetest.get_modpath("hades_technic") then
 end
 
 adaptation_lib.add_item("ingot_carbon_steel", {
-    name = technic_mod..":carbon_steel_ingot"
+    name = technic_mod..":carbon_steel_ingot",
   })
 adaptation_lib.add_item("ingot_stainless_steel", {
-    name = technic_mod..":stainless_steel_ingot".
+    name = technic_mod..":stainless_steel_ingot",
   })
 
 adaptation_lib.add_item("block_carbon_steel", {
-    name = technic_mod..":carbon_steel_block"
+    name = technic_mod..":carbon_steel_block",
   })
 adaptation_lib.add_item("block_stainless_steel", {
-    name = technic_mod..":stainless_steel_block".
+    name = technic_mod..":stainless_steel_block",
   })
 
 
 adaptation_lib.add_item("tramsformer_lv", {
-    name = technic_mod..":lv_transformer".
+    name = technic_mod..":lv_transformer",
   })
 adaptation_lib.add_item("tramsformer_mv", {
-    name = technic_mod..":mv_transformer".
+    name = technic_mod..":mv_transformer",
   })
 adaptation_lib.add_item("tramsformer_hv", {
-    name = technic_mod..":hv_transformer".
+    name = technic_mod..":hv_transformer",
   })
 
 adaptation_lib.add_item("rubber", {
-    name = technic_mod..":rubber".
+    name = technic_mod..":rubber",
   })
 
 adaptation_lib.add_item("control_logic_unit", {
-    name = technic_mod..":control_logic_unit".
+    name = technic_mod..":control_logic_unit",
   })
 
