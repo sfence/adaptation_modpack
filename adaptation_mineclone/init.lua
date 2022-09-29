@@ -18,6 +18,14 @@ if minetest.get_modpath("mcl_buckets") then
 end
 
 
+if minetest.get_modpath("mcl_stairs") then
+  dofile(modpath.."/stairs.lua")
+end
+
+if minetest.get_modpath("mcl_player") then
+  dofile(modpath.."/player.lua")
+end
+
 
 if minetest.get_modpath("mcl_core") then
   dofile(modpath.."/groups.lua")

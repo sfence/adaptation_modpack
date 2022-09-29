@@ -29,3 +29,7 @@ if minetest.get_modpath("player_api") then
   dofile(modpath.."/player_api.lua")
 end
 
+if minetest.get_modpath("stairs") then
+  dofile(modpath.."/stairs.lua")
+end
+

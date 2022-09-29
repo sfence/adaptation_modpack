@@ -29,3 +29,10 @@ if minetest.get_modpath("hades_farming") then
   dofile(modpath.."/farming.lua")
 end
 
+if minetest.get_modpath("hades_stairs") then
+  dofile(modpath.."/stairs.lua")
+end
+
+if minetest.get_modpath("hades_player") then
+  dofile(modpath.."/player.lua")
+end

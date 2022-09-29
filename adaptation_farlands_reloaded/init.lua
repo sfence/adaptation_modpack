@@ -38,6 +38,14 @@ if minetest.get_modpath("fl_liquids") then
   dofile(modpath.."/liquids.lua")
 end
 
+if minetest.get_modpath("fl_stairs") then
+  dofile(modpath.."/stairs.lua")
+end
+
+if minetest.get_modpath("fl_player") then
+  dofile(modpath.."/player.lua")
+end
+
 if minetest.get_modpath("fl_core") then
   dofile(modpath.."/groups.lua")
 end
