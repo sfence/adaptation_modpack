@@ -1,47 +1,31 @@
 
 adaptation_lib.add_item("dirt", {
     name = "fl_core:dirt",
-    tile = "default_dirt.png",
-    sounds = default.node_sound_dirt_defaults(),
-  })
+  }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("stone", {
     name = "fl_core:stone",
-    tile = "default_stone.png",
-    sounds = default.node_sound_stone_defaults(),
-  })
+  }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("cobble", {
     name = "fl_core:cobble",
-    tile = "default_cobble.png",
-    sounds = default.node_sound_stone_defaults(),
-  })
+  }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("stone_desert", {
     name = "fl_core:desert_stone",
-    tile = "default_desert_stone.png",
-    sounds = default.node_sound_stone_defaults(),
-  })
+  }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("gravel", {
     name = "fl_core:gravel",
-    tile = "default_gravel.png",
-    sounds = default.node_sound_gravel_defaults(),
-  })
+  }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("sand", {
     name = "fl_core:sand",
-    tile = "default_sand.png",
-    sounds = default.node_sound_sand_defaults(),
-  })
+  }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("sand_desert", {
     name = "fl_core:desert_sand",
-    tile = "default_desert_sand.png",
-    sounds = default.node_sound_sand_defaults(),
-  })
+  }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("sand_silver", {
     name = "fl_core:silver_sand",
-    tile = "default_silver_sand.png",
-    sounds = default.node_sound_sand_defaults(),
-  })
+  }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("glass", {
     name = "fl_core:glass",
@@ -58,7 +42,7 @@ adaptation_lib.add_item("clay", {
     name = "fl_core:clay",
     tile = "default_clay.png",
     sounds = default.node_sound_dirt_defaults(),
-  })
+  }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("wood_common", {
     name = "fl_core:wood",

@@ -27,8 +27,17 @@ function adaptation_lib.get_items(variants)
   return items
 end
 
-function adaptation_lib.add_item(key, data, auto_take, param)
-  adaptation_lib.items[key] = data
+function adaptation_lib.add_item(keys, data, auto_take, param, disable_check)
+  if (type(keys)=="string") then
+    keys = {keys}
+  end
+  for _,key in pairs(keys) do
+    if (not adaptation_lib.items[key]) then
+      adaptation_lib.items[key] = data
+    else
+      minetest.log("error", "[adaptation_lib]: Key "..key.." is already registered (name is "..data.name..").")
+    end
+  end
   
   if data.lists then
     for _,list in pairs(data.lists) do
@@ -38,12 +47,15 @@ function adaptation_lib.add_item(key, data, auto_take, param)
     end
   end
   
+  local def = minetest.registered_items[data.name]
+  if (not def) and (not disable_check) then
+    minetest.log("error", "[adaptation_lib]: Item "..data.name.." definition missing.")
+  end
   if auto_take then
-    local def = minetest.registered_items[data.name]
     if def then
       auto_take(data, def, param)
-    else
-      minetest.log("error", "Callback auto_take failed. Item "..data.name.." definition missing.")
+    elseif (disable_check) then
+      minetest.log("error", "[adaptation_lib]: Callback auto_take failed. Item "..data.name.." definition missing.")
     end
   end
 end

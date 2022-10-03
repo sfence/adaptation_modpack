@@ -1,6 +1,4 @@
 
 adaptation_lib.add_item("glass", {
-    name = "fl_glass:glass",
-    tile = "farlands_glass.png",
-    sounds = sounds and sounds.node_sound_glass() or nil,
-  })
+    name = "fl_glass:framed_glass",
+  }, adaptation_lib.auto_take_tile_sounds)

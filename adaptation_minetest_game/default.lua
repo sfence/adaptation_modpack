@@ -101,14 +101,14 @@ adaptation_lib.add_item("leaves_common", {
     lists = {"leaves"},
   })
 adaptation_lib.add_item("leaves_jungle", {
-    name = "default:jungle_leaves",
+    name = "default:jungleleaves",
     sounds = default.node_sound_leaves_defaults(),
     lists = {"leaves"},
   })
-adaptation_lib.add_item("needle_pine", {
-    name = "default:pine_needle",
+adaptation_lib.add_item("needles_pine", {
+    name = "default:pine_needles",
     sounds = default.node_sound_leaves_defaults(),
-    lists = {"needle"},
+    lists = {"needles"},
   })
 
 adaptation_lib.add_item("paper", {

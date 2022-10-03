@@ -45,3 +45,11 @@ if (not minetest.get_modpath("hades_materials")) then
     })
 end
 
+if minetest.get_modpath("technic") or minetest.get_modpath("hades_technic") then
+  adaptation_lib.add_item("wire_stainless_steel", {
+      name = "basic_materials:stainless_steel_wire",
+    })
+  adaptation_lib.add_item("bar_carbon_steel", {
+      name = "basic_materials:carbon_steel_bar",
+    })
+end
