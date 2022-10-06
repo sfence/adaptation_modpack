@@ -35,6 +35,9 @@ adaptation_lib.add_item("paper", {
     name = "hades_core:paper",
   })
 
+adaptation_lib.add_item("lump_clay", {
+    name = "hades_core:clay_lump",
+  })
 adaptation_lib.add_item("lump_iron", {
     name = "hades_core:iron_lump",
   })

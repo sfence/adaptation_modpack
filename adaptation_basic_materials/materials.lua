@@ -13,12 +13,15 @@ adaptation_lib.add_item("bar_steel", {
   })
 adaptation_lib.add_item("wire_steel", {
     name = "basic_materials:steel_wire",
+    name_craft_replace = "basic_materials:spool_empty",
   })
 adaptation_lib.add_item("wire_copper", {
     name = "basic_materials:copper_wire",
+    name_craft_replace = "basic_materials:spool_empty",
   })
 adaptation_lib.add_item("wire_gold", {
     name = "basic_materials:gold_wire",
+    name_craft_replace = "basic_materials:spool_empty",
   })
 adaptation_lib.add_item("spool_empty", {
     name = "basic_materials:empty_spool",
@@ -48,6 +51,7 @@ end
 if minetest.get_modpath("technic") or minetest.get_modpath("hades_technic") then
   adaptation_lib.add_item("wire_stainless_steel", {
       name = "basic_materials:stainless_steel_wire",
+      name_craft_replace = "basic_materials:spool_empty",
     })
   adaptation_lib.add_item("bar_carbon_steel", {
       name = "basic_materials:carbon_steel_bar",

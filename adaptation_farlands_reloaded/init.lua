@@ -48,4 +48,5 @@ end
 
 if minetest.get_modpath("fl_core") then
   dofile(modpath.."/groups.lua")
+  dofile(modpath.."/screwdriver.lua")
 end

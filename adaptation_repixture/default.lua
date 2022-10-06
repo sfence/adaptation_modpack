@@ -1,166 +1,158 @@
 
 adaptation_lib.add_item("dirt", {
-    name = "default:dirt",
+    name = "rp_default:dirt",
   }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("stone", {
-    name = "default:stone",
+    name = "rp_default:stone",
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("cobble", {
-    name = "default:cobble",
-  }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("stone_desert", {
-    name = "default:desert_stone",
+    name = "rp_default:cobble",
   }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("gravel", {
-    name = "default:gravel",
+    name = "rp_default:gravel",
   }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("sand", {
-    name = "default:sand",
-  }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("sand_desert", {
-    name = "default:desert_sand",
-  }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("sand_silver", {
-    name = "default:silver_sand",
+    name = "rp_default:sand",
   }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("glass", {
-    name = "default:glass",
-  }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("glass_obsidian", {
-    name = "default:obsidian_glass",
-  }, adaptation_lib.auto_take_tile_sounds)
-
-adaptation_lib.add_item("clay", {
-    name = "default:clay",
+    name = "rp_default:glass",
   }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("wood_common", {
-    name = "default:wood",
+    name = "rp_default:planks",
     lists = {"wood"},
   }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("wood_jungle", {
-    name = "default:junglewood",
+adaptation_lib.add_item("wood_birch", {
+    name = "rp_default:planks_birch",
     lists = {"wood"},
   }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("wood_pine", {
-    name = "default:pine_wood",
+adaptation_lib.add_item("wood_oak", {
+    name = "rp_default:planks_oak",
     lists = {"wood"},
   }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("tree_common", {
-    name = "default:tree",
+    name = "rp_default:tree",
     lists = {"tree"},
   }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("tree_jungle", {
-    name = "default:jungletree",
+adaptation_lib.add_item("tree_birch", {
+    name = "rp_default:tree_birch",
     lists = {"tree"},
   }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("tree_pine", {
-    name = "default:pine_tree",
+adaptation_lib.add_item("tree_oak", {
+    name = "rp_default:tree_oak",
     lists = {"tree"},
   }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("leaves_common", {
-    name = "default:leaves",
+    name = "rp_default:leaves",
     lists = {"leaves"},
   }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("leaves_jungle", {
-    name = "default:jungleleaves",
+adaptation_lib.add_item("leaves_birch", {
+    name = "rp_default:leaves_birch",
     lists = {"leaves"},
   }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("needles_pine", {
-    name = "default:pine_needles",
-    lists = {"needles"},
+adaptation_lib.add_item("leaves_oak", {
+    name = "rp_default:leaves_oak",
+    lists = {"leaves"},
   }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("paper", {
-    name = "default:paper",
+    name = "rp_default:paper",
   })
 
-adaptation_lib.add_item("lump_clay", {
-    name = "default:clay_lump",
+adaptation_lib.add_item("lump_coal", {
+    name = "rp_default:lump_coal",
   })
 adaptation_lib.add_item("lump_iron", {
-    name = "default:iron_lump",
+    name = "rp_default:lump_iron",
   })
 adaptation_lib.add_item("lump_copper", {
-    name = "default:copper_lump",
+    name = "rp_default:lump_copper",
   })
 adaptation_lib.add_item("lump_tin", {
-    name = "default:tin_lump",
+    name = "rp_default:lump_tin",
   })
 adaptation_lib.add_item("lump_gold", {
-    name = "default:gold_lump",
+    name = "rp_default:lump_gold",
+  })
+adaptation_lib.add_item("lump_sulfur", {
+    name = "rp_default:lump_sulfur",
   })
 
+adaptation_lib.add_item("ingot_iron", {
+    name = "rp_default:ingot_iron",
+  })
 adaptation_lib.add_item("ingot_steel", {
-    name = "default:steel_ingot",
+    name = "rp_default:ingot_steel",
+  })
+adaptation_lib.add_item("ingot_carbon_steel", {
+    name = "rp_default:ingot_carbon_steel",
   })
 adaptation_lib.add_item("ingot_copper", {
-    name = "default:copper_ingot",
+    name = "rp_default:ingot_copper",
   })
 adaptation_lib.add_item("ingot_tin", {
-    name = "default:tin_ingot",
+    name = "rp_default:ingot_tin",
   })
 adaptation_lib.add_item("ingot_bronze", {
-    name = "default:bronze_ingot",
+    name = "rp_default:ingot_bronze",
   })
 adaptation_lib.add_item("ingot_gold", {
-    name = "default:gold_ingot",
+    name = "rp_default:ingot_gold",
   })
 
-adaptation_lib.add_item("block_steel", {
-    name = "default:steelblock",
+adaptation_lib.add_item("block_iron", {
+    name = "rp_default:block_iron",
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("block_carbon_steel", {
+    name = "rp_default:block_carbon_steel",
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("block_copper", {
-    name = "default:copperblock",
+    name = "rp_default:block_copper",
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("block_tin", {
-    name = "default:tinblock",
+    name = "rp_default:block_tin",
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("block_bronze", {
-    name = "default:bronzeblock",
+    name = "rp_default:block_bronze",
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("block_gold", {
-    name = "default:goldblock",
+    name = "rp_default:block_gold",
   }, adaptation_lib.auto_take_tile_sounds)
 
 adaptation_lib.add_item("chest", {
-    name = "default:chest",
+    name = "rp_default:chest",
   }, adaptation_lib.auto_take_tile_sounds)
-
-adaptation_lib.add_item("mese", {
-    name = "default:mese",
-  }, adaptation_lib.auto_take_tile_sounds)
-adaptation_lib.add_item("mese_crystal", {
-    name = "default:mese_crystal",
-  })
-adaptation_lib.add_item("mese_crystal_fragment", {
-    name = "default:mese_crystal_fragment",
-  })
 
 adaptation_lib.add_item("torch", {
-    name = "default:torch",
+    name = "rp_default:torch",
+  })
+adaptation_lib.add_item("torch_weak", {
+    name = "rp_default:torch_weak",
+  })
+adaptation_lib.add_item("torch_dead", {
+    name = "rp_default:torch_dead",
   })
 
 adaptation_lib.add_item("water", {
-    name = "default:water_source",
+    name = "rp_default:water_source",
     lists = {"water_source"},
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("water_river", {
-    name = "default:river_water_source",
+    name = "rp_default:river_water_source",
     lists = {"water_source"},
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("water_flowing", {
-    name = "default:water_flowing",
+    name = "rp_default:water_flowing",
     lists = {"water_flowing"},
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("water_flowing_river", {
-    name = "default:river_water_flowing",
+    name = "rp_default:river_water_flowing",
     lists = {"water_flowing"},
   }, adaptation_lib.auto_take_tile_sounds)
 

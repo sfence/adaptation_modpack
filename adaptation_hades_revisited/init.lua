@@ -37,6 +37,15 @@ if minetest.get_modpath("hades_chests") then
   dofile(modpath.."/chests.lua")
 end
 
+if minetest.get_modpath("hades_vessels") then
+  dofile(modpath.."/vessels.lua")
+end
+
 if minetest.get_modpath("hades_player") then
   dofile(modpath.."/player.lua")
 end
+
+if minetest.get_modpath("hades_core") then
+  dofile(modpath.."/groups.lua")
+end
+

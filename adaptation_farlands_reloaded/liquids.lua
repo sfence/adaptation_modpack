@@ -34,10 +34,12 @@ adaptation_lib.add_item("bucket_empty", {
 
 adaptation_lib.add_item("bucket_water", {
     name = "fl_bucket:bucket_water",
+    name_craft_replace = "fl_bucket:bucket",
     lists = {"bucket_water"},
   })
 adaptation_lib.add_item("bucket_river_water", {
     name = "fl_bucket:bucket_river_water",
+    name_craft_replace = "fl_bucket:bucket",
     lists = {"bucket_water"},
   })
 

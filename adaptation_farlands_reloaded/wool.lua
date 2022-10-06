@@ -12,7 +12,7 @@ for color_key, color_data in pairs(adaptation_lib.basic_colors) do
       lists = {"wool"},
       
       color = color_key,
-    }, nil, nil, true)
+    }, nil, nil, false)
 end
 
 adaptation_lib.add_mod("wool", {

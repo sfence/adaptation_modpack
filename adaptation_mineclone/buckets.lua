@@ -6,11 +6,13 @@ adaptation_lib.add_item("bucket_empty", {
 
 adaptation_lib.add_item("bucket_water", {
     name = "mcl_buckets:bucket_water",
+    name_craft_replace = "mcl_bucket:bucket_empty",
     lists = {"bucket_water"},
   })
 
 adaptation_lib.add_item("bucket_river_water", {
     name = "mcl_buckets:bucket_river_water",
+    name_craft_replace = "mcl_bucket:bucket_empty",
     lists = {"bucket_water"},
   })
 

@@ -28,6 +28,10 @@ function adaptation_lib.get_items(variants)
 end
 
 function adaptation_lib.add_item(keys, data, auto_take, param, disable_check)
+  if (not data.name) then
+    error "[adaptation_lib]: Registration of item without name is not allowed."
+    return
+  end
   if (type(keys)=="string") then
     keys = {keys}
   end
@@ -48,6 +52,9 @@ function adaptation_lib.add_item(keys, data, auto_take, param, disable_check)
   end
   
   local def = minetest.registered_items[data.name]
+  if (not def) then
+    def = ItemStack(data.name):get_definition()
+  end
   if (not def) and (not disable_check) then
     minetest.log("error", "[adaptation_lib]: Item "..data.name.." definition missing.")
   end
@@ -84,6 +91,9 @@ function adaptation_lib.get_list(variants)
 end
 
 -- GROUPS
+
+adaptation_lib.unknown_group = "-unknown_group-"
+
 function adaptation_lib.get_group(variants)
   if (type(variants)=="string") then
     variants = {variants}
@@ -130,5 +140,27 @@ function adaptation_lib.check_keys_aviable(log_identificator, where, keys)
     end
   end
   return check
+end
+  
+adaptation_lib.unknown_item = "-unknown_item-"
+
+function adaptation_lib.get_item_name(item_data)
+  if item_data and item_data.name then
+    return item_data.name
+  end
+  return adaptation_lib.unknown_item
+end
+
+function adaptation_lib.get_craft_replacements(finished, unfinished)
+  local replacements = {}
+  for _,replacement in pairs(finished or {}) do
+    table.insert(replacements, replacement)
+  end
+  for _,item in pairs(unfinished or {}) do
+    if item.name_craft_replace then
+      table.insert(item.name, item.name_craft_replace)
+    end
+  end
+  return replacements
 end
 

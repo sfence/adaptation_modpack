@@ -33,6 +33,15 @@ adaptation_lib.add_item("paper", {
     name = "mcl_core:paper",
   })
 
+adaptation_lib.add_item("lump_clay", {
+    name = "mcl_core:clay_lump",
+  })
+adaptation_lib.add_item("lump_coal", {
+    name = "mcl_core:coal_lump",
+  })
+adaptation_lib.add_item("lump_charcoal", {
+    name = "mcl_core:charcoal_lump",
+  })
 adaptation_lib.add_item("lump_iron", {
     name = "mcl_core:iron_nugget",
   })

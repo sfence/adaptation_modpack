@@ -1,6 +1,10 @@
 
 local modpath = minetest.get_modpath(minetest.get_current_modname())
 
+if (not minetest.get_modpath("mcl_core")) then
+  return
+end
+
 if minetest.get_modpath("mesecons_materials") or minetest.get_modpath("mesecons_materials") then
  dofile(modpath.."/materials.lua")
 end
