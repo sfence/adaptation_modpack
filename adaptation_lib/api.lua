@@ -151,6 +151,13 @@ function adaptation_lib.get_item_name(item_data)
   return adaptation_lib.unknown_item
 end
 
+function adaptation_lib.get_item_name_or_nil(item_data)
+  if item_data and item_data.name then
+    return item_data.name
+  end
+  return nil
+end
+
 function adaptation_lib.get_craft_replacements(finished, unfinished)
   local replacements = {}
   for _,replacement in pairs(finished or {}) do
