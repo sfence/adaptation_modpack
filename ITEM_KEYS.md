@@ -32,11 +32,27 @@ Wood/planks of different trees.
 
 Tree trunks of different trees.
 
-## `leaves_*`            -> tree leaves
+## `leaves_*`
 
-## `lump_*`              -> lump of ore/material
+Tree leaves of different trees.
 
-## `ingot_*`             -> ingot of metals
+## `lump_*`
 
-## `block_*`             -> block of some material
+Lump of some ore/material.
+
+## `ingot_*`
+
+Ingot of some metal.
+
+## `block_*`
+
+Block of some material.
+
+## `dye_*`
+
+Different colors dyes.
+
+## `wool_*`
+
+Different colors wool. Unclored wool key `wool_raw`.
 

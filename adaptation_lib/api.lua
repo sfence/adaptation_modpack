@@ -135,7 +135,9 @@ function adaptation_lib.check_keys_aviable(log_identificator, where, keys)
   local check = true
   for _,key in pairs(keys) do
     if (not where[key]) then
-      minetest.log("error", log_identificator.."key "..key.." is missing.")
+      if log_identificator then
+        minetest.log("error", log_identificator.."key "..key.." is missing.")
+      end
       check = false
     end
   end
