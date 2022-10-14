@@ -34,6 +34,10 @@ adaptation_lib.add_item("rubber", {
     name = technic_mod..":rubber",
   })
 
+adaptation_lib.add_item("graphite", {
+    name = technic_mod..":graphite",
+  })
+
 adaptation_lib.add_item("control_logic_unit", {
     name = technic_mod..":control_logic_unit",
   })

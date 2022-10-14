@@ -33,3 +33,7 @@ if minetest.get_modpath("stairs") then
   dofile(modpath.."/stairs.lua")
 end
 
+if minetest.get_modpath("default") then
+  dofile(modpath.."/groups.lua")
+end
+

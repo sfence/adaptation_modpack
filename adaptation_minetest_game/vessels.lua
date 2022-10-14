@@ -1,9 +1,9 @@
 
-adaptation_lib.add_item("steel_bottle", {
+adaptation_lib.add_item("bottle_steel", {
     name = "vessels:steel_bottle",
   })
 
-adaptation_lib.add_item("glass_bottle", {
+adaptation_lib.add_item("bottle_glass", {
     name = "vessels:glass_bottle",
   })
 

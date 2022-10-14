@@ -167,7 +167,7 @@ function adaptation_lib.get_craft_replacements(finished, unfinished)
   end
   for _,item in pairs(unfinished or {}) do
     if item.name_craft_replace then
-      table.insert(item.name, item.name_craft_replace)
+      table.insert(replacements, {item.name, item.name_craft_replace})
     end
   end
   return replacements

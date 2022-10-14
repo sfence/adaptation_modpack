@@ -84,6 +84,9 @@ adaptation_lib.add_item("paper", {
 adaptation_lib.add_item("lump_clay", {
     name = "default:clay_lump",
   })
+adaptation_lib.add_item("lump_coal", {
+    name = "default:coal_lump",
+  })
 adaptation_lib.add_item("lump_iron", {
     name = "default:iron_lump",
   })

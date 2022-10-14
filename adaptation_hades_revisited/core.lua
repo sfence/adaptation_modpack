@@ -38,6 +38,9 @@ adaptation_lib.add_item("paper", {
 adaptation_lib.add_item("lump_clay", {
     name = "hades_core:clay_lump",
   })
+adaptation_lib.add_item("lump_coal", {
+    name = "hades_core:coal_lump",
+  })
 adaptation_lib.add_item("lump_iron", {
     name = "hades_core:iron_lump",
   })
