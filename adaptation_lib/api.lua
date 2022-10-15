@@ -45,9 +45,7 @@ function adaptation_lib.add_item(keys, data, auto_take, param, disable_check)
   
   if data.lists then
     for _,list in pairs(data.lists) do
-      adaptation_lib.lists[list] = adaptation_lib.lists[list] or {}
-      
-      table.insert(adaptation_lib.lists[list], data.name)
+      adaptation_lib.add_list_item(list, data.name)
     end
   end
   
@@ -76,6 +74,31 @@ function adaptation_lib.update_item(key, update)
   end
 end
 
+function adaptation_lib.get_registered_item(variants)
+  if (type(variants)=="string") then
+    variants = {variants}
+  end
+  for _,key in pairs(variants) do
+    if minetest.registered_items[key] then
+      return key
+    end
+  end
+  return nil
+end
+
+function adaptation_lib.get_registered_items(variants)
+  if (type(variants)=="string") then
+    variants = {variants}
+  end
+  local items = {}
+  for _,key in pairs(variants) do
+    if minetest.registered_items[key] then
+      table.insert(items, key)
+    end
+  end
+  return items
+end
+
 -- LISTS
 function adaptation_lib.get_list(variants)
   if (type(variants)=="string") then
@@ -88,6 +111,16 @@ function adaptation_lib.get_list(variants)
     end
   end
   return nil
+end
+
+function adaptation_lib.add_list_item(list, items)
+  if (type(items)=="string") then
+    items = {items}
+  end
+  adaptation_lib.lists[list] = adaptation_lib.lists[list] or {}
+  for _,item in pairs(items) do
+    table.insert(adaptation_lib.lists[list], item)
+  end
 end
 
 -- GROUPS

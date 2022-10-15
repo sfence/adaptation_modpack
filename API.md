@@ -5,12 +5,22 @@
 ### `adaptation_lib.get_item(variants)`
 
 * return first found key item data or nil
-* variants - string or array of strings with wanted keys 
+* variants - string or array of strings with wanted keys
+
+```
+  local coal = adaptation_lib.get_item("lump_coal")
+  
+  local graphite = adaptation_lib.get_item({"graphite", "lump_charcoal, ""lump_coal"})
+```
 
 ### `adaptation_lib.get_items(variants)`
 
 * return all found keys item data or empty array
 * variants - string or array of strings with wanted keys 
+
+```
+  local fire_sources = adaptation_lib.get_items({"flint_and_steel","torche"})
+```
 
 ### `adaptation_lib.add_item(item_keys, item_data, auto_take, take_param, disable_check)`
 
@@ -43,6 +53,24 @@
 * key - key for update
 * udpate - update data
 
+### `adaptation_lib.get_registered_item(variants)`
+
+* return first found registered item
+* variants - string or array of strings with wanted item names
+
+```
+local marble = adaptation_lib.get_registered_item({"technic:marble", "hades_core:marble", "greek:marble"})
+```
+
+### `adaptation_lib.get_registered_items(variants)`
+
+* return list of all found registered items
+* variants - string or array of strings with wanted item names
+
+```
+local stones = adaptation_lib.get_registered_items({"default:stone", "default:desert_stone", "hades_core:stone", "hades_core:chondrite"})
+```
+
 ## Manupulate list API
 
 ### `adaptation_lib.get_list(variants)`
@@ -50,12 +78,26 @@
 * Return first found list or nil.
 * variantas - string or array of string
 
+```
+  local ropes = adaptation_lib.get_list("rope")
+```
+
+### `adaptation_lib.add_list_item(list, items)`
+
+* Return first found list or nil.
+* list - list name
+* items - string or array of string with registered item names
+
 ## Manupulate groups API
 
 ### `adaptation_lib.get_group(variants)`
 
 * Return first found group or nil.
 * variantas - string or array of string
+
+```
+  local group_wood = adaptation_lib.get_group("wood")
+```
 
 ### `adaptation_lib.add_group(key, group_string)`
 
@@ -69,6 +111,10 @@
 
 * Return first found mod or nil.
 * variantas - string or array of string
+
+```
+  local player_mod = adaptation_lib.get_mod("player")
+```
 
 ### `adaptation_lib.add_mod(key, mod_data)`
 
@@ -87,11 +133,34 @@ Predefined callbacks and etc.
 * where - table where keys should be
 * keys - array of keys for check 
 
+```
+  adaptation.coal = adaptation_lib.get_item("lump_coal")
+  adaptation.copper = adaptation_lib.get_item("ingot_copper")
+  
+  if (not adaptation_lib.check_keys_aviable("[test_mod] Test keys check: ", adaptation, {"coal", "copper"})) then
+    return
+  end
+```
 
 ### `adaptation_lib.get_item_name(item_data)`
 
 * Return item name or unknown item string if name is not aviable.
 * `item_data` - data of item returned from `adaptation_lib.get_item`
+
+```
+  adaptation.coal = adaptation_lib.get_item("lump_coal")
+  adaptation.copper = adaptation_lib.get_item("ingot_copper")
+  
+  local N = adaptation_lib.get_item_name
+  
+  minetest,register_craft({
+      output = "test_mod:copper_item",
+      recipe = {
+        {N(adaptation.copper), "test_mod:mod_item"},
+        {"", N(adaptation.copper)},
+      }
+    })
+```
 
 ### `adaptation_lib.get_item_name_or_nil(item_data)`
 
@@ -103,4 +172,23 @@ Predefined callbacks and etc.
 *
 * finished - array of item pairs `{recipe_item, replace_item}`
 * unfinished - array of `item_data`, replaced by `{item_data.name, item_data.name_craft_replace}` if `name_craft_replace` is aviable.
+
+```
+  adaptation.coal = adaptation_lib.get_item("lump_coal")
+  adaptation.copper_wire = adaptation_lib.get_item("wire_copper")
+  
+  local N = adaptation_lib.get_item_name
+  
+  minetest,register_craft({
+      output = "test_mod:copper_item",
+      recipe = {
+        {N(adaptation.copper_wire), "test_mod:mod_item"},
+        {"", N(adaptation.copper_wire)},
+      },
+      replacements = adaptation_lib.get_craft_replacements(
+          {{"test_mod:mod_item","test_mod:mod_item_empty"},},
+          {adaptation.copper_wire, adaptation.copper_wire},
+        ),
+    })
+```
 
