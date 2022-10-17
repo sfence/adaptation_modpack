@@ -169,7 +169,7 @@ Predefined callbacks and etc.
 
 ### `adaptation_lib.get_craft_replacements(finished, unfinished)`
 
-*
+* Complete replacements table for craft recipe.
 * finished - array of item pairs `{recipe_item, replace_item}`
 * unfinished - array of `item_data`, replaced by `{item_data.name, item_data.name_craft_replace}` if `name_craft_replace` is aviable.
 
