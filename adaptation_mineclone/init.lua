@@ -5,6 +5,10 @@ if minetest.get_modpath("mcl_core") then
   dofile(modpath.."/core.lua")
 end
 
+if minetest.get_modpath("mcl_farming") then
+  dofile(modpath.."/farming.lua")
+end
+
 if minetest.get_modpath("mcl_dye") then
   dofile(modpath.."/dye.lua")
 end

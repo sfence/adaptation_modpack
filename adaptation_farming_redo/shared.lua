@@ -4,6 +4,10 @@ if minetest.get_modpath("hades_extrafarming") then
   farming_mod = "hades_extrafarming"
 end
 
+adaptation_lib.add_item("seed_barley", {
+    name = farming_mod..":seed_barley",
+  })
+
 adaptation_lib.add_item("hemp_fibre", {
     name = farming_mod..":hemp_fibre",
   })
