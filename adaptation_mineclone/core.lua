@@ -67,6 +67,10 @@ adaptation_lib.add_item("wood_common", {
     name = "mcl_core:wood",
     lists = {"wood"},
   }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("wood_oak", {
+    name = "mcl_core:wood",
+    ---lists = {"wood"},
+  }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("wood_jungle", {
     name = "mcl_core:junglewood",
     lists = {"wood"},
@@ -78,7 +82,11 @@ adaptation_lib.add_item("wood_spruce", {
 
 adaptation_lib.add_item("tree_common", {
     name = "mcl_core:tree",
-    lists = {"tree","tree_oak"},
+    lists = {"tree"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("tree_oak", {
+    name = "mcl_core:tree",
+    lists = {"tree_oak"},
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("tree_jungle", {
     name = "mcl_core:jungletree",
@@ -91,7 +99,11 @@ adaptation_lib.add_item("tree_spruce", {
 
 adaptation_lib.add_item("leaves_common", {
     name = "mcl_core:leaves",
-    lists = {"leaves", "leaves_oak"},
+    lists = {"leaves"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("leaves_oak", {
+    name = "mcl_core:leaves",
+    lists = {"leaves_oak"},
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("leaves_jungle", {
     name = "mcl_core:jungleleaves",
@@ -99,6 +111,25 @@ adaptation_lib.add_item("leaves_jungle", {
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("leaves_spruce", {
     name = "mcl_core:spruceleaves",
+    lists = {"needles"},
+  }, adaptation_lib.auto_take_tile_sounds)
+
+adaptation_lib.add_list_item("oaks_leaves", "mcl_core:leaves")
+
+adaptation_lib.add_item("sapling_common", {
+    name = "mcl_core:sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("sapling_oak", {
+    name = "mcl_core:sapling",
+    --lists = {"sapling_oak"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("sapling_jungle", {
+    name = "mcl_core:junglesapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("sapling_spruce", {
+    name = "mcl_core:sprucesapling",
     lists = {"needle"},
   }, adaptation_lib.auto_take_tile_sounds)
 

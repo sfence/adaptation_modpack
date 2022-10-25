@@ -12,6 +12,6 @@ adaptation_lib.add_item("biofuel_bottle", {
     name = biofuel_mod..":bottle_fuel"
   })
 adaptation_lib.add_item("biofuel_can", {
-    name = biofuel_mod..":can_fuel"
+    name = biofuel_mod..":fuel_can"
   })
 

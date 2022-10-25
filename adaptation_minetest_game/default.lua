@@ -42,6 +42,10 @@ adaptation_lib.add_item("wood_common", {
     name = "default:wood",
     lists = {"wood"},
   }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("wood_apple", {
+    name = "default:wood",
+    --lists = {"wood"},
+  }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("wood_jungle", {
     name = "default:junglewood",
     lists = {"wood"},
@@ -54,6 +58,10 @@ adaptation_lib.add_item("wood_pine", {
 adaptation_lib.add_item("tree_common", {
     name = "default:tree",
     lists = {"tree"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("tree_apple", {
+    name = "default:tree",
+    --lists = {"tree"},
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("tree_jungle", {
     name = "default:jungletree",
@@ -68,6 +76,10 @@ adaptation_lib.add_item("leaves_common", {
     name = "default:leaves",
     lists = {"leaves"},
   }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("leaves_apple", {
+    name = "default:leaves",
+    --lists = {"leaves"},
+  }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("leaves_jungle", {
     name = "default:jungleleaves",
     lists = {"leaves"},
@@ -76,6 +88,95 @@ adaptation_lib.add_item("needles_pine", {
     name = "default:pine_needles",
     lists = {"needles"},
   }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("leaves_acacia", {
+    name = "default:acacia_leaves",
+    lists = {"leaves"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("leaves_aspen", {
+    name = "default:aspen_leaves",
+    lists = {"leaves"},
+  }, adaptation_lib.auto_take_tile_sounds)
+
+adaptation_lib.add_item("sapling_common", {
+    name = "default:sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("sapling_apple", {
+    name = "default:sapling",
+    --lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("sapling_acacia", {
+    name = "default:acacia_sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("sapling_aspen", {
+    name = "default:aspen_sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("sapling_jungle", {
+    name = "default:junglesapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("sapling_emergent_jungle", {
+    name = "default:emergent_jungle_sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("sapling_pine", {
+    name = "default:pine_sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+
+adaptation_lib.add_item("leaves_common_bush", {
+    name = "default:bush_leaves",
+    lists = {"leaves"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("leaves_acacia_bush", {
+    name = "default:acacia_bush_leaves",
+    lists = {"leaves"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("leaves_blueberry_bush", {
+    name = "default:blueberry_bush_leaves",
+    lists = {"leaves"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("needles_pine_bush", {
+    name = "default:pine_bush_needles",
+    lists = {"needles"},
+  }, adaptation_lib.auto_take_tile_sounds)
+
+adaptation_lib.add_item("bush_stem_common", {
+    name = "default:bush_stem",
+    lists = {"bush_stem"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("bush_stem_acacia", {
+    name = "default:acacia_bush_stem",
+    lists = {"bush_stem"},
+  }, adaptation_lib.auto_take_tile_sounds)
+adaptation_lib.add_item("bush_stem_pine", {
+    name = "default:pine_bush_stem",
+    lists = {"bush_stem"},
+  }, adaptation_lib.auto_take_tile_sounds)
+
+adaptation_lib.add_item("sapling_bush_common", {
+    name = "default:bush_sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("sapling_bush_acacia", {
+    name = "default:acacia_bush_sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("sapling_bush_blueberry", {
+    name = "default:blueberry_bush_sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("sapling_bush_pine", {
+    name = "default:pine_bush_sapling",
+    lists = {"sapling"},
+  }, adaptation_lib.auto_take_images_sounds)
+
+adaptation_lib.add_list_item_n("grass", "default:grass_", 5)
+adaptation_lib.add_list_item_n("grass", "default:dry_grass_", 5)
+adaptation_lib.add_list_item_n("grass", "default:marram_grass_", 3)
+adaptation_lib.add_list_item("grass", "default:junglegrass")
 
 adaptation_lib.add_item("paper", {
     name = "default:paper",

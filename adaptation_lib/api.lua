@@ -123,6 +123,18 @@ function adaptation_lib.add_list_item(list, items)
   end
 end
 
+function adaptation_lib.add_list_item_n(list, items, count)
+  if (type(items)=="string") then
+    items = {items}
+  end
+  adaptation_lib.lists[list] = adaptation_lib.lists[list] or {}
+  for _,item in pairs(items) do
+    for n = 1,count do
+      table.insert(adaptation_lib.lists[list], item..n)
+    end
+  end
+end
+
 -- GROUPS
 
 adaptation_lib.unknown_group = "-unknown_group-"
