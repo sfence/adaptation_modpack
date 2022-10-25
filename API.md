@@ -84,9 +84,16 @@ local stones = adaptation_lib.get_registered_items({"default:stone", "default:de
 
 ### `adaptation_lib.add_list_item(list, items)`
 
-* Return first found list or nil.
+* Add items to list.
 * list - list name
 * items - string or array of string with registered item names
+
+### `adaptation_lib.add_list_item_n(list, items, count)`
+
+* Add items to list.
+* list - list name
+* items - string or array of string with registered item names
+* count - count if items, number will be added to the end of item name taken from items list (can be used like `add_list_item_n("grass", "default:grass_", 5)`
 
 ## Manupulate groups API
 
