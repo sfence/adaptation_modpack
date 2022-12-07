@@ -24,15 +24,15 @@ local trees = {
 
 for key,tree in pairs(trees) do
   adaptation_lib.add_item("moretrees_wood_"..key, {
-      name = moretrees_mod..":"..tree.."_planks"
+      name = moretrees_mod..":"..tree.."_planks",
       lists={"wood"},
     })
   adaptation_lib.add_item("moretrees_tree_"..key, {
-      name = moretrees_mod..":"..tree.."_trunk"
+      name = moretrees_mod..":"..tree.."_trunk",
       lists={"tree"},
     })
   adaptation_lib.add_item("moretrees_leaves_"..key, {
-      name = moretrees_mod..":"..tree.."_leaves"
+      name = moretrees_mod..":"..tree.."_leaves",
       lists={"leaves"},
     })
 end
