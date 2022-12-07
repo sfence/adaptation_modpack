@@ -37,5 +37,5 @@ for key,tree in pairs(trees) do
     })
 end
 
-adaptation_lib.add_list_item("oaks_leaves", moretrees_mod..":oak_leaves")
+adaptation_lib.add_list_item("oak_leaves", moretrees_mod..":oak_leaves")
 

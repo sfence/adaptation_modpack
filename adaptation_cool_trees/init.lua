@@ -39,6 +39,6 @@ for _, tree in pairs(trees) do
 end
 
 if minetest.get_modpath("oak") or minetest.get_modpath("hades_oak") then
-  adaptation_lib.add_list_item("oaks_leaves", "oak:leaves")
+  adaptation_lib.add_list_item("oak_leaves", "oak:leaves")
 end
 

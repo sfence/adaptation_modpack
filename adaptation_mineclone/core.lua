@@ -103,7 +103,7 @@ adaptation_lib.add_item("leaves_common", {
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("leaves_oak", {
     name = "mcl_core:leaves",
-    lists = {"leaves_oak"},
+    lists = {"oak_leaves"},
   }, adaptation_lib.auto_take_tile_sounds)
 adaptation_lib.add_item("leaves_jungle", {
     name = "mcl_core:jungleleaves",

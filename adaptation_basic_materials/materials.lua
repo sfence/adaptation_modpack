@@ -8,6 +8,9 @@ adaptation_lib.add_item("strip_steel", {
 adaptation_lib.add_item("strip_copper", {
     name = "basic_materials:copper_strip",
   })
+adaptation_lib.add_item("strip_gold", {
+    name = "basic_materials:gold_strip",
+  })
 adaptation_lib.add_item("bar_steel", {
     name = "basic_materials:steel_bar",
   })
@@ -56,4 +59,32 @@ if minetest.get_modpath("technic") or minetest.get_modpath("hades_technic") then
   adaptation_lib.add_item("bar_carbon_steel", {
       name = "basic_materials:carbon_steel_bar",
     })
+  adaptation_lib.add_item("bar_stainless_steel", {
+      name = "basic_materials:stainless_steel_bar",
+    })
+  
+  adaptation_lib.add_item("strip_carbon_steel", {
+      name = "basic_materials:carbon_steel_strip",
+    })
+  adaptation_lib.add_item("strip_stainless_steel", {
+      name = "basic_materials:stainless_steel_strip",
+    })
+  
+  adaptation_lib.add_item("strip_lead", {
+      name = "basic_materials:lead_strip",
+    })
 end
+
+if minetest.get_modpath("aluz") or minetest.get_modpath("hades_extraores") then
+  
+  adaptation_lib.add_item("strip_aluminum", {
+      name = "basic_materials:aluminum_strip",
+    })
+  adaptation_lib.add_item("bar_aluminum", {
+      name = "basic_materials:aluminum_bar",
+    })
+  adaptation_lib.add_item("wire_aluminum", {
+      name = "basic_materials:aluminum_wire",
+    })
+end
+

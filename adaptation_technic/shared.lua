@@ -42,3 +42,13 @@ adaptation_lib.add_item("control_logic_unit", {
     name = technic_mod..":control_logic_unit",
   })
 
+adaptation_lib.add_item("cable_LV", {
+    name = technic_mod..":lv_cable",
+  })
+adaptation_lib.add_item("cable_MV", {
+    name = technic_mod..":mv_cable",
+  })
+adaptation_lib.add_item("cable_HV", {
+    name = technic_mod..":hv_cable",
+  })
+
