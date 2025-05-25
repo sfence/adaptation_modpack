@@ -1,6 +1,7 @@
 
 adaptation_lib.add_mod("player", {
     formspec_inv = "list[current_player;main;0.5,3;10,4;]",
+		next_line_offset_inv = 10,
 
     attach_player = function(player_name)
       hades_player.player_attached[player_name] = true

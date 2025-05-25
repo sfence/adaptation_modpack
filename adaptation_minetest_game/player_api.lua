@@ -1,6 +1,7 @@
 
 adaptation_lib.add_mod("player", {
     formspec_inv = "list[current_player;main;1.5,3;8,4;]",
+		next_line_offset_inv = 8,
 
     attach_player = function(player_name)
       player_api.player_attached[player_name] = true

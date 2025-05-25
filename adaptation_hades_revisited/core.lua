@@ -86,6 +86,14 @@ adaptation_lib.add_item("block_gold", {
     name = "hades_core:goldblock",
   }, adaptation_lib.auto_take_tile_sounds)
 
+adaptation_lib.add_item("rod_steel", {
+    name = "hades_core:steel_rod",
+  })
+
+adaptation_lib.add_item("gem_prismatic", {
+    name = "hades_core:prismatic_gem",
+  })
+
 adaptation_lib.add_item("mese", {
     name = "hades_core:mese",
   }, adaptation_lib.auto_take_tile_sounds)
@@ -105,3 +113,25 @@ adaptation_lib.add_item("water_flowing", {
     lists = {"water_flowing"},
   }, adaptation_lib.auto_take_tile_sounds)
 
+adaptation_lib.add_item("shovel_wood", {
+    name = "hades_core:shovel_wood",
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("shovel_stone", {
+    name = "hades_core:shovel_stone",
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("shovel_bronze", {
+    name = "hades_core:shovel_bronze",
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("shovel_steel", {
+    name = "hades_core:shovel_steel",
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("shovel_mese", {
+    name = "hades_core:shovel_mese",
+  }, adaptation_lib.auto_take_images_sounds)
+adaptation_lib.add_item("shovel_prism", {
+    name = "hades_core:shovel_prism",
+  }, adaptation_lib.auto_take_images_sounds)
+
+adaptation_lib.add_item("screwdriver_steel", {
+    name = "hades_core:screwdriver",
+  }, adaptation_lib.auto_take_images_sounds)

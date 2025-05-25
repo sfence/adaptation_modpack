@@ -233,6 +233,10 @@ adaptation_lib.add_item("block_gold", {
     name = "default:goldblock",
   }, adaptation_lib.auto_take_tile_sounds)
 
+adaptation_lib.add_item("gem_diamond", {
+		name = "default:diamond",
+	})
+
 adaptation_lib.add_item("chest", {
     name = "default:chest",
   }, adaptation_lib.auto_take_tile_sounds)
@@ -268,3 +272,10 @@ adaptation_lib.add_item("water_flowing_river", {
     lists = {"water_flowing"},
   }, adaptation_lib.auto_take_tile_sounds)
 
+adaptation_lib.add_item("shovel_steel", {
+    name = "default:shovel_steel",
+  }, adaptation_lib.auto_take_images_sounds)
+
+adaptation_lib.add_item("screwdriver_steel", {
+    name = "default:screwdriver",
+  }, adaptation_lib.auto_take_images_sounds)

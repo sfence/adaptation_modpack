@@ -45,6 +45,10 @@ if minetest.get_modpath("hades_vessels") then
   dofile(modpath.."/vessels.lua")
 end
 
+if minetest.get_modpath("hades_vines") then
+  dofile(modpath.."/vines.lua")
+end
+
 if minetest.get_modpath("hades_player") then
   dofile(modpath.."/player.lua")
 end
